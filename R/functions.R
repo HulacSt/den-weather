@@ -3,7 +3,9 @@ library(here)
 library(ggrepel)
 # Load Data ####
 # Normals and Records
-daily_yrs <- read_rds('daily_yrs.rds')
+if(file.exists('data/daily/daily_yrs.rds')) {
+  daily_yrs <- read_rds('data/daily/daily_yrs.rds')
+}
 
 scale_x_months <- function() {
   scale_x_date(
@@ -15,7 +17,7 @@ scale_x_months <- function() {
 }
 
 get_year_data <- function(yr) {
-  if(yr %in% names(daily_yrs)) {
+  if(exists(daily_trs) & yr %in% names(daily_yrs)) {
     return(daily_yrs[[as.character(yr)]])
   }
   print(str_glue('getting {yr}'))
