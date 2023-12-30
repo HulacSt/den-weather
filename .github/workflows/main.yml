@@ -3,3 +3,38 @@ name: Copy daily
 on:
   schedule:
     - cron:  '00 1 * * *'
+
+jobs:
+  copy-daily:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+        - name: Get remote file
+          id: remote-file
+          run: |
+                  mkdir tmp
+                  curl -s "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2023/72565003017.csv" > tmp/y2023.csv
+        # - name: Update changed files
+        #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        #     git config --global user.name "GHA Bot"
+        #     cp tmp/${{ matrix.package.file }} changelogs/${{ matrix.package.file }}
+        #     git add changelogs/${{ matrix.package.file }}
+        #     git pull --ff-only
+        #     git commit -m "Update ${{matrix.package.name}} changelog"
+        #     git push
+        # - name: Send email notification
+        #   if: ${{ steps.local-hash.outputs.local_hash != steps.remote-hash.outputs.remote_hash }}
+        #   uses: dawidd6/action-send-mail@v3
+        #   with:
+        #     server_address: smtp.gmail.com
+        #     server_port: 465
+        #     username: ${{ secrets.MAIL_USERNAME }}
+        #     password: ${{ secrets.MAIL_PASSWORD }}
+        #     subject: "${{matrix.package.name}} update"
+        #     body: "${{matrix.package.name}} has been updated! Please check the changelog at ${{matrix.package.url}}."
+        #     to: ${{ secrets.MAIL_RECIPIENT }}
+        #     from: ${{ secrets.MAIL_USERNAME}}
+        
