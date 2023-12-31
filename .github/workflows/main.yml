@@ -16,7 +16,7 @@ jobs:
           id: remote-file
           run: |
                   mkdir tmp
-                  curl -s "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2023/72565003017.csv" > tmp/y2023.csv
+                  curl -s "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2023/72565003017.csv" > data/daily/raw/y2023.csv
         # - name: Update changed files
         #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
         #     git config --global user.name "GHA Bot"
