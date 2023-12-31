@@ -17,9 +17,6 @@ scale_x_months <- function() {
 }
 
 get_year_data <- function(yr) {
-  if(exists(daily_trs) & yr %in% names(daily_yrs)) {
-    return(daily_yrs[[as.character(yr)]])
-  }
   print(str_glue('getting {yr}'))
   station_id <- 72565003017
   url <-
