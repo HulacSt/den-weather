@@ -18,6 +18,7 @@ jobs:
         - name: update date
           run: echo `date '+%Y-%m-%dT%T'` > now.txt
         - name: Update changed files
+          run: |
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
             git config --global user.name "GHA Bot"
             git add data/daily/raw/2023.csv
