@@ -25,5 +25,5 @@ jobs:
             git add data/daily/raw/2023.csv
             git add now.txt
             git pull --ff-only
-            git commit -m "Update year 2023 daily"
+            git commit -m "Update year 2024 daily"
             git push
