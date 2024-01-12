@@ -1,0 +1,7 @@
+---
+title: "den-weather"
+format: gfm
+---
+
+## Denver Weather Patterns
+Some patterns
