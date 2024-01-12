@@ -1,4 +1,3 @@
 project:
   title: "Denver Weather"
-  output-dir: ./
 format: gfm

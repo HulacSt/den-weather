@@ -5,3 +5,10 @@ format: gfm
 
 ## Denver Weather Patterns
 Some patterns
+
+## Updated
+
+```{r}
+paste('Last updated at', substr(Sys.time(),0,19))
+```
+
