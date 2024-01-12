@@ -1,4 +1,4 @@
 project:
-  title: "Project title"
-  output-dir: reports
-format:
+  title: "Denver Weather"
+  output-dir: ./
+format: gfm
