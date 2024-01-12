@@ -1,7 +1,7 @@
 # From https://github.com/quarto-dev/quarto-actions/blob/main/examples/quarto-publish-example.yml
 on:
   push:
-    branches: a_nonexistent_branch
+    branches: main
 
 name: Render and Publish
 
