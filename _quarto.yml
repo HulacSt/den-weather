@@ -1,0 +1,4 @@
+project:
+  title: "Project title"
+  output-dir: reports
+format:
