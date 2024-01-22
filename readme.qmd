@@ -4,7 +4,7 @@ format: gfm
 ---
 
 ## Denver Weather Patterns
-Some patterns
+#TODO
 
 ## Updated
 
@@ -12,3 +12,11 @@ Some patterns
 paste('Last updated at', substr(Sys.time(),0,19))
 ```
 
+## TODO
+
+- [ ] Format Daily
+- [ ] Today’s low was in the __th percentile for similar days (+/- 7 days)
+- [ ] Today’s low was the coldest since ___
+- [ ] Today’s low was the warmest since ___
+- [ ] Today’s high was the coldest since ___
+- [ ] Today’s high was the warmest since ___
