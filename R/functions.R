@@ -16,13 +16,8 @@ scale_x_months <- function() {
   )
 }
 
-get_year_data <- function(yr) {
-  print(str_glue('getting {yr}'))
-  station_id <- 72565003017
-  url <-
-    "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/"
-  str_glue("{url}{yr}/{station_id}.csv") |>
-    read_csv(progress = T) |> 
+format_daily <- function(daily_raw) {
+  daily_raw |> 
     mutate(year = year(DATE),
            Year = as.character(year),
            month = month(DATE, label = T),

@@ -12,3 +12,4 @@ tibble(yr) |>
   transmute(url = str_glue("{url}{yr}/{station_id}.csv"),
          destfile = str_glue('data/daily/raw/{yr}.csv')) |> 
   pmap(download.file)
+
