@@ -109,7 +109,7 @@ daily |>
          actual_low <= dy$actual_low) |> 
   slice_max(date)
 
-low_last_time_string <- str_glue("The last time the low was this low (or lower) was __{last_time_this_cold_or_colder$date}__, when the high was __{last_time_this_cold_or_colder$actual_low}F__.")
+low_last_time_string <- str_glue("The last time the low was this low (or lower) was __{last_time_this_cold_or_colder$date}__, when the low was __{last_time_this_cold_or_colder$actual_low}F__.")
 ```
 
 `r low_percentile_string`  
