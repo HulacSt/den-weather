@@ -473,6 +473,17 @@
       ],
       "Hash": "1a0a9a3d5083d0d573c4214576f1e690"
     },
+    "fracture": {
+      "Package": "fracture",
+      "Version": "0.2.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "Rcpp"
+      ],
+      "Hash": "5f87d036cd62e70b8f0e901a9a3c424b"
+    },
     "fs": {
       "Package": "fs",
       "Version": "1.6.3",
@@ -947,6 +958,17 @@
         "utils"
       ],
       "Hash": "0984ce8da8da9ead8643c5cbbb60f83e"
+    },
+    "nombre": {
+      "Package": "nombre",
+      "Version": "0.4.1",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "fracture"
+      ],
+      "Hash": "f6d7196857c571704cecfa015d8bb53e"
     },
     "openssl": {
       "Package": "openssl",
