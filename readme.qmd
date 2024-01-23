@@ -60,14 +60,14 @@ high_percentile <-
   summarise(mean(actual_high < dy$actual_high, na.rm = T)) |> 
   pull()
 
-high_percentile_string <- str_glue("Today's high of __{dy$actual_high}F__ was in the __{nom_ord(round(high_percentile*100))} percentile__ of highs in similar days.")
+high_percentile_string <- str_glue("This day's high of __{dy$actual_high}F__ was in the __{nom_ord(round(high_percentile*100))} percentile__ for highs in similar days.")
 
 high_hist <- 
 comparable |> 
   ggplot(aes(x = actual_high)) +
   geom_histogram(binwidth = 1) +
   geom_vline(xintercept = dy$actual_high) +
-  ggtitle('Today\'s high vs highs of comparable days')
+  ggtitle('This day\'s high vs highs of comparable days')
 
 last_time_this_warm_or_warmer <- 
 daily |> 
@@ -76,7 +76,7 @@ daily |>
          actual_high >= dy$actual_high) |> 
   slice_max(date)
 
-high_last_time_string <- str_glue("The last time the high was as high (or higher) as today was __{last_time_this_warm_or_warmer$date}__, when the high was __{last_time_this_warm_or_warmer$actual_high}F__.")
+high_last_time_string <- str_glue("The last time the high was this high (or higher) was __{last_time_this_warm_or_warmer$date}__, when the high was __{last_time_this_warm_or_warmer$actual_high}F__.")
 ```
 
 `r high_percentile_string`  
@@ -93,14 +93,14 @@ low_percentile <-
   summarise(mean(actual_low < dy$actual_low, na.rm = T)) |> 
   pull()
 
-low_percentile_string <- str_glue("Today's low of __{dy$actual_low}F__ was in the __{nom_ord(round(low_percentile*100))} percentile__ of lows in similar days.")
+low_percentile_string <- str_glue("This day's low of __{dy$actual_low}F__ was in the __{nom_ord(round(low_percentile*100))} percentile__ for lows in similar days.")
 
 low_hist <- 
 comparable |> 
   ggplot(aes(x = actual_low)) +
   geom_histogram(binwidth = 1) +
   geom_vline(xintercept = dy$actual_low) +
-  ggtitle('Today\'s low vs lows of comparable days')
+  ggtitle('This day\'s low vs lows of comparable days')
 
 last_time_this_cold_or_colder <- 
 daily |> 
@@ -109,7 +109,7 @@ daily |>
          actual_low <= dy$actual_low) |> 
   slice_max(date)
 
-low_last_time_string <- str_glue("The last time the low was as low (or lower) as today was __{last_time_this_cold_or_colder$date}__, when the high was __{last_time_this_cold_or_colder$actual_low}F__.")
+low_last_time_string <- str_glue("The last time the low was this low (or lower) was __{last_time_this_cold_or_colder$date}__, when the high was __{last_time_this_cold_or_colder$actual_low}F__.")
 ```
 
 `r low_percentile_string`  
