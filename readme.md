@@ -14,19 +14,19 @@
 
 ## Highs
 
-Today’s high of **39.9F** was in the **twentieth percentile** of highs
-in similar days.  
-The last time the high was as high (or higher) as today was
-**2024-01-18**, when the high was **48.9F**.
+This day’s high of **39.9F** was in the **twentieth percentile** for
+highs in similar days.  
+The last time the high was this high (or higher) was **2024-01-18**,
+when the high was **48.9F**.
 
 ![](readme_files/figure-commonmark/unnamed-chunk-4-1.png)
 
 ## Lows
 
-Today’s low of **17.1F** was in the **thirty-sixth percentile** of lows
-in similar days.  
-The last time the low was as low (or lower) as today was **2024-01-19**,
-when the high was **10.4F**.
+This day’s low of **17.1F** was in the **thirty-sixth percentile** for
+lows in similar days.  
+The last time the low was this low (or lower) was **2024-01-19**, when
+the high was **10.4F**.
 
 ![](readme_files/figure-commonmark/unnamed-chunk-6-1.png)
 
