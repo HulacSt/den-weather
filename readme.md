@@ -11,7 +11,7 @@
 
 ## Updated at
 
-2024-02-07 11:14:27 MST
+2024-02-08 11:14:08 MST
 
 ## Highs
 
@@ -24,7 +24,7 @@ when the high was **57.9F**.
 
 ## Lows
 
-This day’s low of **23F** was in the **sixty-seventh percentile** for
+This day’s low of **19.9F** was in the **fifty-fourth percentile** for
 lows in similar days.  
 The last time the low was this low (or lower) was **2024-01-21**, when
 the low was **16F**.
