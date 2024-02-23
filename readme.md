@@ -11,11 +11,11 @@
 
 ## Updated at
 
-2024-02-22 11:14:46 MST
+2024-02-23 11:15:13 MST
 
 ## Highs
 
-This day’s high of **64.9F** was in the **eighty-eighth percentile** for
+This day’s high of **66F** was in the **ninety-first percentile** for
 highs in similar days.  
 The last time the high was this high (or higher) was **2023-12-20**,
 when the high was **66.9F**.
@@ -24,7 +24,7 @@ when the high was **66.9F**.
 
 ## Lows
 
-This day’s low of **35.1F** was in the **ninety-seventh percentile** for
+This day’s low of **30.9F** was in the **ninety-third percentile** for
 lows in similar days.  
 The last time the low was this low (or lower) was **2024-02-19**, when
 the low was **21.2F**.
