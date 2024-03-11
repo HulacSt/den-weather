@@ -7,15 +7,15 @@
 
 - <https://www.ncei.noaa.gov/data/global-summary-of-the-day/doc/readme.pdf>
 
-# High/Low data for 2024-03-08
+# High/Low data for 2024-03-09
 
 ## Updated at
 
-2024-03-10 12:12:53 MDT
+2024-03-11 12:14:49 MDT
 
 ## Highs
 
-This day’s high of **43F** was in the **fourteenth percentile** for
+This day’s high of **52F** was in the **twenty-seventh percentile** for
 highs in similar days.  
 The last time the high was this high (or higher) was **2024-03-07**,
 when the high was **61F**.
@@ -24,7 +24,7 @@ when the high was **61F**.
 
 ## Lows
 
-This day’s low of **24.1F** was in the **forty-sixth percentile** for
+This day’s low of **21.9F** was in the **thirty-fifth percentile** for
 lows in similar days.  
 The last time the low was this low (or lower) was **2024-03-06**, when
 the low was **15.1F**.
