@@ -8,25 +8,27 @@
 
 - <https://www.ncei.noaa.gov/data/global-summary-of-the-day/doc/readme.pdf>
 
-# High/Low data for 2024-04-18
+# High/Low data for 2024-04-20
 
 ## Updated at
 
-2024-04-22 12:15:03 MDT
+2024-04-23 12:14:48 MDT
 
 ## Highs
 
-This day’s high of **NAF** was in the **NaN percentile** for highs in
-similar days.
+This day’s high of **41F** was in the **second percentile** for highs in
+similar days.  
+The last time the high was this high (or higher) was **2024-04-19**,
+when the high was **41F**.
 
 ![](readme_files/figure-commonmark/unnamed-chunk-4-1.png)
 
 ## Lows
 
-This day’s low of **30.9F** was in the **thirty-fifth percentile** for
+This day’s low of **30F** was in the **twenty-seventh percentile** for
 lows in similar days.  
-The last time the low was this low (or lower) was **2024-04-12**, when
-the low was **30.9F**.
+The last time the low was this low (or lower) was **2024-04-10**, when
+the low was **25F**.
 
 ![](readme_files/figure-commonmark/unnamed-chunk-6-1.png)
 
