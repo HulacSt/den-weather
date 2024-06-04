@@ -7,26 +7,26 @@
 
 - <https://www.ncei.noaa.gov/data/global-summary-of-the-day/doc/readme.pdf>
 
-# High/Low data for 2024-05-30
+# High/Low data for 2024-06-01
 
 ## Updated at
 
-2024-06-03 12:18:04 MDT
+2024-06-04 12:17:04 MDT
 
 ## Highs
 
-This day’s high of **82.9F** was in the **sixty-sixth percentile** for
+This day’s high of **82F** was in the **fifty-fifth percentile** for
 highs in similar days.  
-The last time the high was this high (or higher) was **2024-05-29**,
+The last time the high was this high (or higher) was **2024-05-30**,
 when the high was **82.9F**.
 
 ![](readme_files/figure-commonmark/unnamed-chunk-4-1.png)
 
 ## Lows
 
-This day’s low of **50F** was in the **sixty-eighth percentile** for
+This day’s low of **53.1F** was in the **eighty-second percentile** for
 lows in similar days.  
-The last time the low was this low (or lower) was **2024-05-29**, when
+The last time the low was this low (or lower) was **2024-05-31**, when
 the low was **48F**.
 
 ![](readme_files/figure-commonmark/unnamed-chunk-6-1.png)
