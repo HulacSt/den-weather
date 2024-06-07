@@ -11,14 +11,14 @@
 
 ## Updated at
 
-2024-06-06 12:16:43 MDT
+2024-06-07 12:17:59 MDT
 
 ## Highs
 
-This day’s high of **87.1F** was in the **seventieth percentile** for
+This day’s high of **88F** was in the **seventy-second percentile** for
 highs in similar days.  
-The last time the high was this high (or higher) was **2024-06-02**,
-when the high was **87.1F**.
+The last time the high was this high (or higher) was **2023-10-01**,
+when the high was **91F**.
 
 ![](readme_files/figure-commonmark/unnamed-chunk-4-1.png)
 
