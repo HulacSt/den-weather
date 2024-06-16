@@ -27,6 +27,8 @@ list.files('data/daily/raw', full.names = T) |>
   bind_rows() |> 
   janitor::clean_names()
 
+write_rds(daily, 'data/daily/daily.rds')
+
 dy <- 
 daily |> 
   filter(temp_attributes == 24) |> 
