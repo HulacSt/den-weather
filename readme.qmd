@@ -28,6 +28,7 @@ list.files('data/daily/raw', full.names = T) |>
   janitor::clean_names()
 
 write_rds(daily, 'data/daily/daily.rds')
+write_csv(daily, 'data/daily/daily.csv')
 
 dy <- 
 daily |> 
