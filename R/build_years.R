@@ -13,3 +13,13 @@ tibble(yr) |>
          destfile = str_glue('data/daily/raw/{yr}.csv')) |> 
   pmap(download.file)
 
+hourly_url <- "https://www.ncei.noaa.gov/data/global-hourly/access/"
+
+dir.create('data/hourly/raw', recursive = T)
+
+tibble(yr) |> 
+  transmute(url = str_glue("{hourly_url}{yr}/{station_id}.csv"),
+            destfile = str_glue('data/hourly/raw/{yr}.csv')) |> 
+  pmap(download.file)
+
+
