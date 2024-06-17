@@ -13,9 +13,12 @@ jobs:
     steps:
         - name: Checkout code
           uses: actions/checkout@v2
-        - name: Get remote file
+        - name: Get daily
           id: remote-file
           run: curl -s "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2024/72565003017.csv" > data/daily/raw/2024.csv
+        - name: Get hourly
+          id: remote-file
+          run: curl -s "https://www.ncei.noaa.gov/data/global-hourly/access/2024/72565003017.csv" > data/hourly/raw/2024.csv
         - name: update date
           run: echo `date '+%Y-%m-%dT%T'` > now.txt
         - name: Update changed files
