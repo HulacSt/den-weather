@@ -26,6 +26,7 @@ jobs:
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
             git config --global user.name "GHA Bot"
             git add data/daily/raw/2024.csv
+            git add data/hourly/raw/2024.csv
             git add now.txt
             git pull --ff-only
             git commit -m "Update year 2024 daily"
