@@ -297,13 +297,13 @@
     },
     "curl": {
       "Package": "curl",
-      "Version": "5.1.0",
+      "Version": "5.2.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "R"
       ],
-      "Hash": "9123f3ef96a2c1a93927d828b2fe7d4c"
+      "Hash": "ce88d13c0b10fe88a37d9c59dba2d7f9"
     },
     "data.table": {
       "Package": "data.table",
@@ -792,13 +792,13 @@
     },
     "jsonlite": {
       "Package": "jsonlite",
-      "Version": "1.8.7",
+      "Version": "1.8.8",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
         "methods"
       ],
-      "Hash": "266a20443ca13c65688b2116d5220f76"
+      "Hash": "e1b9c55281c5adc4dd113652d9e26768"
     },
     "knitr": {
       "Package": "knitr",
@@ -1368,9 +1368,9 @@
     },
     "thematic": {
       "Package": "thematic",
-      "Version": "0.1.5",
+      "Version": "0.1.2.1",
       "Source": "Repository",
-      "Repository": "RSPM",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "farver",
@@ -1384,7 +1384,7 @@
         "scales",
         "utils"
       ],
-      "Hash": "dd888c43932085e4a8aa7388f6f8dc23"
+      "Hash": "77ad63ad98b3434a01284dbf1125e404"
     },
     "tibble": {
       "Package": "tibble",
