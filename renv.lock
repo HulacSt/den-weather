@@ -1366,6 +1366,26 @@
       ],
       "Hash": "1ab6223d3670fac7143202cb6a2d43d5"
     },
+    "thematic": {
+      "Package": "thematic",
+      "Version": "0.1.5",
+      "Source": "Repository",
+      "Repository": "RSPM",
+      "Requirements": [
+        "R",
+        "farver",
+        "ggplot2",
+        "grDevices",
+        "graphics",
+        "grid",
+        "rappdirs",
+        "rlang",
+        "rstudioapi",
+        "scales",
+        "utils"
+      ],
+      "Hash": "dd888c43932085e4a8aa7388f6f8dc23"
+    },
     "tibble": {
       "Package": "tibble",
       "Version": "3.2.1",
