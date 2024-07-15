@@ -96,6 +96,14 @@ pal_df <-
 pal_nv <- pal_df$color |> 
   `names<-`(pal_df$measure)
 
+pal <- function(nm) {
+  if(!nm %in% names(pal_nv)) {
+    stop('Not a valid name. Here they are:\n', str_flatten(names(pal_nv), '\n'))
+  } else {
+    unname(pal_nv[nm])
+  }
+}; pal('average_high')
+
 
 # Functions and Chart Bases ####
 ## Precipitation #######
