@@ -83,7 +83,7 @@ monthweek <- function(d,w) {
 
 
 hourly |> 
-  filter(year == 2024) |> 
+  filter(year == 2023) |> 
   filter(tmp != '+9999,9') |> 
   filter(temp_qc == 'Passed') |>
   # filter(floor_date(date, 'day') == ymd('2024-01-01')) |> 
@@ -99,7 +99,7 @@ hourly |>
   distinct(night, daily_high, daily_low, date, ten_pm = temp_c) |> 
   mutate(attic_fan = 
   case_when(
-    daily_high < 20 ~ 'day too cold',
+    daily_high < 23 ~ 'not needed',
     daily_low >= 20 ~ 'too warm overnight',
     ten_pm >= 23 ~ 'too warm at 10pm',
     daily_low < 10 ~ 'run on low',
@@ -110,9 +110,11 @@ hourly |>
   ggplot(aes(x = wd, y = mw, fill = attic_fan)) +
   geom_tile() +
   facet_wrap(~ month(night, label = T, abbr = F)) +
-  scale_fill_manual(values = c('run on high' = pal('average_mean'),
+  scale_fill_manual(values = c(
+'run on high' = pal('average_mean'),
 'run on low' = scales::muted(pal('average_mean')),
+'not needed' = '#444444',
 'day too cold' = pal('record_low'),
 'too cold overnight' = pal('actual_low'),
-'too warm at 10pm' = pal('actual_high'),
-'too warm overnight' = pal('record_high')))
+'too warm at 10pm' = '#ffff00',
+'too warm overnight' = '#ff0000')) #pal('record_high')))
