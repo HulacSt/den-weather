@@ -33,31 +33,18 @@ hourly_list <-
     .progress = "Reading Hourly CSVs"
   )
 
+
 hourly <- 
 hourly_list |> 
   bind_rows() |> 
-  janitor::clean_names()
-
-hourly |> slice_sample(n=10) |> View()
-
-hourly |> 
-  summarise(across(wnd:last_col(), ~mean(!is.na(.)))) |> 
-  pivot_longer(everything()) |> 
-  arrange(desc(value))
-
-hourly |> 
-  summarise(across(everything(), n_distinct))
-
-hourly |> 
-  select(date,source,report_type, quality_control, wnd:slp) |> 
-  arrange(desc(date))
-
-hourly |>
+  janitor::clean_names() |>
   select(date, tmp, dew) |>
+  mutate(date = with_tz(date, 'America/Denver')) |> 
   separate_wider_delim(
     cols = tmp,
     delim = ",",
-    names = c("temp_c", "temp_qc")
+    names = c("temp_c", "temp_qc"),
+    cols_remove = F
   ) |>
   separate_wider_delim(
     cols = dew,
@@ -87,9 +74,10 @@ hourly |>
       'Passed' = c('0','1','4','5','9'),
       'Suspect' = c('2','6','A','P'),
       'Erroneous' = c('3','7')
-    ))) -> h2
+    ))) 
 
-h2 |> 
+
+hourly |> 
   filter(temp_qc == 'Passed',
 dew_qc == 'Passed',
 rh <= 100) |> 
@@ -99,3 +87,15 @@ mean),
   ggplot(aes(x = year, y = rh, color = tod)) +
   geom_line() +
   facet_wrap(.~month)
+
+hourly |> 
+  filter(temp_qc == 'Passed',
+dew_qc == 'Passed',
+rh <= 100) |> 
+  filter(month %in% c('Jun','Jul','Aug')) |> 
+  summarise(across(c(temp_c, dew_c, rh),
+mean),
+.by = c(year,tod)) |> 
+  ggplot(aes(x = year, y = rh, color = tod)) +
+  geom_line()
+
