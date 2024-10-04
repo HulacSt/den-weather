@@ -1,5 +1,7 @@
-library(tidyverse)
-source('R/functions.R')
+library(tibble)
+library(dplyr)
+library(purrr)
+# source('R/functions.R')
 
 yr <- c(1995:2012, 2014:2023)
 station_id <- 72565003017

@@ -1,5 +1,11 @@
 # parse Denver normals and min/maxes
-library(tidyverse)
+library(tibble)
+library(dplyr)
+library(purrr)
+library(ggplot2)
+library(stringr)
+library(lubridate)
+library(readr)
 library(rvest)
 library(here)
 
