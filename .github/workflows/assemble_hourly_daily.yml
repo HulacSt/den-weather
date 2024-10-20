@@ -29,6 +29,9 @@ jobs:
         
       - name: Set up R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: |
+            deps::.
 
       - name: Update Hourly data set
         run: Rscript R/cleaning/clean_hourly.R
