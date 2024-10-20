@@ -16,12 +16,12 @@ jobs:
         - name: Get daily
           id: remote-file-daily
           run: sh get_daily.sh
-        # - name: Get hourly
-          # id: remote-file-hourly
-          # run: curl -s "https://www.ncei.noaa.gov/data/global-hourly/access/2024/72565003017.csv" > data/hourly/raw/2024.csv
+        - name: Get hourly
+          id: remote-file-hourly
+          run: sh get_hourly.sh
         - name: update date
           run: echo `date '+%Y-%m-%dT%T'` > now.txt
-        - name: Update changed files
+        - name: Update changed files #todo: make year references below dynamic
           run: |
             git config --global user.email "github-actions[bot]@users.noreply.github.com"
             git config --global user.name "GHA Bot"
