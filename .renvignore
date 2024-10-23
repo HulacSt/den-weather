@@ -1,0 +1,4 @@
+# Start ignoring everything
+*
+# Except for
+!R/cleaning/*

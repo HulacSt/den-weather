@@ -1,6 +1,13 @@
 library(janitor)
 library(fs)
-library(tidyverse)
+library(readr)
+library(fs)
+library(janitor)
+library(dplyr)
+library(purrr)
+library(lubridate)
+library(tidyr)
+library(forcats)
 
 format_daily <- function(daily_raw) {
   daily_raw |> 

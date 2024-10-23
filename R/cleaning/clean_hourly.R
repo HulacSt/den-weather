@@ -1,6 +1,13 @@
 library(janitor)
 library(fs)
-library(tidyverse)
+library(readr)
+library(fs)
+library(janitor)
+library(dplyr)
+library(purrr)
+library(lubridate)
+library(tidyr)
+library(forcats)
 
 source('R/relative_humidity.R')
 
