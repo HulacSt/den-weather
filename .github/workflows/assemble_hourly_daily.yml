@@ -43,7 +43,7 @@ jobs:
           git pull
           git add data/hourly/hourly.rds
           git commit -m "Update hourly data set"
-          git add data/daily/hourly.rds
+          git add data/daily/daily.rds
           git commit -m "Update daily data set"
           git push
 
