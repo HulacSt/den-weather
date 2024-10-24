@@ -42,8 +42,7 @@ jobs:
           git config --global user.name "GHA Bot"
           git pull
           git add data/hourly/hourly.rds
-          git commit -m "Update hourly data set"
           git add data/daily/daily.rds
-          git commit -m "Update daily data set"
+          git commit -m "Update hourly/daily data set"
           git push
 
